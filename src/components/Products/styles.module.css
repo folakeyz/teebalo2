@@ -1,0 +1,189 @@
+.containers{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 3rem 8rem;
+    background:white;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap:30px;
+}
+.myCard{
+    width: 100%;
+    border: 0;
+    height: 28rem;
+    box-shadow: 0px 1px 2px -1px rgba(0,0,0,0.02),
+    0px 2px 4px -2px rgba(0,0,0,0.08),
+    0px 4px 8px -4px rgba(0,0,0,0.10),
+    0px 8px 16px -8px rgba(0,0,0,0.12);
+}
+.myPix{
+    width: 100%;
+    border: 0;
+    height: 18rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.line{
+    border:1px dotted gainsboro;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    background:#24A048;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding-bottom: .1rem;
+    padding-top: 1rem;
+    margin-right: 1rem;
+   
+    /* border-bottom-right-radius: 50px; */
+}
+.view{
+    padding: .5rem 1rem;
+    background:crimson;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding-bottom: .1rem;
+    padding-top: 1rem;
+    margin-right: 1rem;
+}
+
+.myPix img{
+    width: 100%;
+    transition: transform 2s ease-in-out;
+
+}
+.myPix img:hover{
+    transform: scale(1.2);
+}
+.myText{
+    width: 100%;
+    border: 0;
+    height: 10rem;
+    text-align: left;
+    padding: 1rem;
+    padding-top: 0;
+}
+.myText small{
+    color: gray;
+}
+.smCaption{
+    width: 150px;
+    height: 30px;
+    background:#21243D;
+    position: absolute;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+    padding-top: 5px;
+    z-index: 9999;
+}
+
+.headingsection .subheading {
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 0;
+    color: #21243D;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative; }
+    .headingsection .subheading:after {
+      position: absolute;
+      top: 50%;
+      left: -60px;
+      content: '';
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 50px;
+      height: 1px;
+      margin-top: -1px;
+      background: #21243D; }
+    .headingsection .subheading:before {
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      content: '';
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 50px;
+      height: 1px;
+      margin-top: -1px;
+      background: #21243D; }
+
+      
+      @media (max-height: 500px) {
+        .containers{
+            padding: 10px;
+        }
+        .grid{
+        grid-template-columns: 100%;
+        }
+        .card {
+            height: 100%;
+          }
+      }
+      
+      @media (max-width: 640px) {
+        .containers{
+            padding: 10px;
+        }
+        .grid{
+            grid-template-columns: 100%;
+            }
+            .card {
+                height: 100%;
+              }
+      }
+      
+      @media (max-height: 600px) {
+        .containers{
+            padding: 10px;
+        }
+      
+        .grid{
+            grid-template-columns: 100%;
+            }
+            .card {
+                height: 100%;
+              }
+      }
+      
+      @media (max-width: 640px) {
+        .containers{
+            padding: 10px;
+        }
+        .grid{
+            grid-template-columns: 100%;
+            }
+            .card {
+                height: 100%;
+              }
+            
+      }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+        .containers{
+            padding: 10px;
+        }
+        .grid{
+            grid-template-columns: 100%;
+            }
+            .card {
+                height: 10%;
+              }
+            
+      }
